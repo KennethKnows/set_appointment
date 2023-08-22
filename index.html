@@ -20,19 +20,19 @@
     <div class="card-content">
         <h3>SET APPOINTMENT</h3>
         <form>
-            <input type="text" placeholder="First Name" id="firstName">
-            <input type="text" placeholder="Last Name" id="lastName">
-            <input type="text" placeholder="Phone Number" id="phoneNumber">
-            <input type="text" placeholder="Email Address" id="emailAddress">
+            <input type="text" placeholder="First Name" id="firstName" required>
+            <input type="text" placeholder="Last Name" id="lastName" required>
+            <input type="text" placeholder="Phone Number" id="phoneNumber" required>
+            <input type="text" placeholder="Email Address" id="emailAddress" required>
                         
             <div class="form-row">
-                <input type="number" placeholder="How Many Persons?" min="1" id="numberOfPersons">
+                <input type="number" placeholder="How Many Persons?" min="1" id="numberOfPersons" required>
                 <label for="scheduleDateTime"></label>
-                <input type="datetime-local" id="scheduleDateTime" name="schedule">
+                <input type="datetime-local" id="scheduleDateTime" name="schedule" required>
             </div>
 
             <div class="form-row" id="serviceSelect">
-            <select id="selectService">
+            <select id="selectService" required>
                 <option>Facial Services</option>
                 <option>Hair Services</option>
                 <option>Body Service</option>
